@@ -1,0 +1,251 @@
+.center-text {
+  text-align: center;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.float-none {
+  float: none;
+}
+.center-no-float {
+  float: none;
+  text-align: center;
+}
+.no-center-float {
+  float: left;
+  text-align: initial;
+}
+.center-vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.invisible {
+  display: none;
+}
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+.absolute-one-hundred-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.list-style-none {
+  list-style-type: none;
+}
+.overflow-fix {
+  overflow: auto;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
+.basic-transition {
+  transition: all 0.2s ease-in-out;
+}
+.dark-overlay {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none repeat 0 0 rgba(30, 30, 30, 0.5);
+}
+.radius {
+  border-radius: 4px;
+}
+.secondary-btn {
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #512da8;
+  color: #512da8;
+  background: none;
+  padding: 6px 12px;
+}
+.secondary-btn:hover {
+  background-color: #512da8;
+  color: #ffffff;
+}
+.primary-btn {
+  padding: 12px 56px;
+  border-radius: 4px;
+  border: 1px solid #18ffff;
+  background-color: #18ffff;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  margin: 20px 0;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+.primary-btn:hover {
+  background-color: transparent;
+  border: 1px solid #18ffff;
+  font-size: 16px;
+  color: #18ffff;
+}
+.white-btn {
+  padding: 16px 33px;
+  color: #ffffff;
+  border-radius: 4px;
+  line-height: 85px;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid;
+}
+header {
+  margin-top: 126px;
+}
+header .nav-tabs li {
+  margin-right: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+header .nav-tabs li a {
+  border: none;
+  margin-right: 0;
+  font-size: 18px;
+}
+header .nav-tabs li a:hover {
+  border-radius: 4px;
+}
+header .nav-tabs li a i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+header .add:hover {
+  background-color: #1bc98e;
+}
+header .add a {
+  color: #ffffff;
+}
+header .add a:hover {
+  background-color: #1bc98e;
+}
+header .search_person:hover {
+  background-color: #e64759;
+}
+header .search_person a {
+  color: #ffffff;
+}
+header .search_person a:hover {
+  background-color: #e64759;
+}
+header .search_company:hover {
+  background-color: #e4d836;
+}
+header .search_company a {
+  color: #ffffff;
+}
+header .search_company a:hover {
+  background-color: #e4d836;
+}
+header .return:hover {
+  background-color: rgba(255, 153, 0, 0.5);
+}
+header .return a {
+  color: #ffffff;
+}
+header .return a:hover {
+  background-color: rgba(255, 153, 0, 0.5);
+}
+header .contact:hover {
+  background-color: #1ca8dd;
+}
+header .contact a {
+  color: #ffffff;
+}
+header .contact a:hover {
+  background-color: #1ca8dd;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #search {
+    padding: 12px 56px;
+    border-radius: 4px;
+    border: 1px solid #18ffff;
+    background-color: #18ffff;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    margin: 20px 0;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    display: flex;
+    margin: 10% auto auto;
+  }
+  #search:hover {
+    background-color: transparent;
+    border: 1px solid #18ffff;
+    font-size: 16px;
+    color: #18ffff;
+  }
+}
+@media (max-width: 1259px) {
+  header .nav-tabs li {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 1210px) {
+  .nav > li > a {
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 1110px) {
+  header {
+    margin-top: 200px;
+    margin-left: 20px;
+  }
+  .nav > li > a {
+    padding: 15px 35px;
+  }
+}
+@media (max-width: 1039px) {
+  .nav > li > a {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 839px) {
+  .nav > li > a {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 806px) {
+  header {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header .nav-tabs li {
+    margin-top: 10px;
+  }
+  .profile {
+    float: none!important;
+  }
+}
+@media (max-width: 775px) {
+  header {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}

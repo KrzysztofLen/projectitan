@@ -1,0 +1,114 @@
+@import "colors.less"; // COMMON
+@import 'helpers.less';
+
+
+// INDEX LOGIN PANEL ********************************/
+#top-image {
+    background: url('../img/red-rocks-park-o.jpg') no-repeat;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background-size: cover;
+}
+
+.box_log {
+    margin-top: 20px;
+
+    #login_form {
+        margin: 100px auto 0;
+        border: 1px solid @bright-text-color;
+        border-radius: 10px;
+        transition: 0.7s;
+        justify-content: space-between;
+        background: @transparent-white;
+
+        &:hover {
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 8px 18px rgba(0, 0, 0, 0.4);
+            transition: 0.7s;
+        }
+
+        .login-heading-social {
+            padding: 20px 0;
+
+            p {
+                color: @brightest-text-color;
+                .center-text;
+                font-size: 20px;
+                font-weight: bold;
+
+                i {
+                    font-size: 40px;
+                    color: @brightest-text-color;
+                    padding: 0 10px;
+
+                    &:hover {
+                        color: @primary-text-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .login-heading {
+        padding: 40px 30px;
+        border-radius: 10px 10px 0 0;
+        .center-text;
+
+        h1 {
+            color: @brightest-text-color;
+            font-size: 86px;
+            font-weight: bold;
+            text-transform: uppercase;
+            @media @smartphones {
+                font-size: 56px;
+            }
+        }
+
+        i {
+            width: 70px;
+            height: 70px;
+            font-size: 50px;
+            border-radius: 100%;
+            color: @white;
+            background: @primary-color;
+            padding: 7px;
+        }
+    }
+}
+
+.container {
+    .form-group {
+        margin: 30px 0 0;
+        .center-text;
+
+        .login_data {
+            width: 300px;
+            color: @primary-color;
+            background: none;
+        }
+
+        .form-control {
+            width: 300px;
+            .center-text;
+            margin: 0 auto;
+            @media @smartphones {
+                width: 200px;
+            }
+        }
+    }
+
+    #login_form {
+        margin: 0 auto;
+        .center-text;
+
+        #login-button-index {
+            margin: 0 auto;
+            .center-text;
+            .primary-btn;
+        }
+    }
+}

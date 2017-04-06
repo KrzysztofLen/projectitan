@@ -1,0 +1,174 @@
+@import "colors.less"; // COMMON
+@import 'helpers.less';
+
+// Nawigacja
+
+header {
+    margin-top: 126px;
+
+		.nav-tabs {
+			li {
+				margin-right: 15px;
+        background-color: @indexlog-panel;
+        .radius;
+				a {
+					border: none;
+					margin-right: 0;
+          font-size: 18px;
+
+					&:hover {
+						.radius;
+					}
+
+          i {
+              font-size: 40px;
+              margin-right: 10px;
+          }
+				}
+			}
+		}
+
+    // Przycisk dodaj klienta
+    .add {
+			&:hover {
+					background-color: @add-color;
+			}
+        a {
+            color: @brightest-text-color;
+
+            &:hover {
+                background-color: @add-color;
+            }
+        }
+    }
+    // Przycisk szukaj osoby prywatnej
+    .search_person {
+			&:hover {
+					background-color: @search-person-color;
+				}
+        a {
+            color: @brightest-text-color;
+
+            &:hover {
+                background-color: @search-person-color;
+            }
+        }
+    }
+
+    // Przycisk szukaj firmy
+    .search_company {
+			&:hover {
+					background-color: @search-company-color;
+				}
+        a {
+            color: @brightest-text-color;
+
+            &:hover {
+                background-color: @search-company-color;
+            }
+        }
+    }
+
+    // Przycisk powrót
+    .return {
+			&:hover {
+					background-color: @return-color;
+				}
+        a {
+            color: @brightest-text-color;
+
+            &:hover {
+                background-color: @return-color;
+            }
+        }
+    }
+
+    // Przycisk kontakt
+    .contact {
+			&:hover {
+					background-color: @contact-color;
+			}
+        a {
+            color: @brightest-text-color;
+
+            &:hover {
+                background-color: @contact-color;
+            }
+        }
+    }
+}
+
+
+// MEDIA QUIERIES
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	#search {
+		.primary-btn;
+		display: flex;
+		margin: 10% auto auto;
+	}
+}
+
+@media (max-width: 1259px) {
+	header .nav-tabs li {
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 1210px) {
+	.nav>li>a {
+		padding: 10px 5px;
+	}
+}
+
+@media (max-width: 1110px) {
+	header {
+		margin-top: 200px;
+		margin-left: 20px;
+	}
+
+	.nav > li > a {
+		padding: 15px 35px;
+	}
+}
+
+@media (max-width: 1039px) {
+	.nav > li > a {
+		padding: 10px 15px;
+	}
+}
+
+@media (max-width: 839px) {
+	.nav > li > a {
+		padding: 10px 10px;
+	}
+}
+
+@media (max-width: 806px) {
+	header {
+		margin-top: 0;
+		margin-left: 20px;
+	}
+
+	.nav {
+		display: flex;
+    flex-direction: column;
+	}
+
+	header .nav-tabs li {
+		margin-top: 10px;
+	}
+
+  .profile {
+    float: none!important;
+  }
+}
+
+@media (max-width: 775px) {
+	header {
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+}
+
+// /END MEDIA QUERIES
